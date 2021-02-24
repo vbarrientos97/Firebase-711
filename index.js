@@ -7,11 +7,6 @@ const gratitudesContainer = document.getElementById("gratitudes-container");
 let editStatus = false;
 let id = '';
 
-/**
- * Save a New gratitude in Firestore
- * @param {string} date the date of the gratitude
- * @param {string} description the description of the gratitude
- */
 const saveGratitude = (date, description) =>
     db.collection("gratitudes").doc().set({
         date,
